@@ -1,0 +1,166 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+
+body{
+  margin: 0;
+  background-color: aquamarine;
+}
+
+*
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#global-nav {
+  width: 100%;
+  height: 85px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+}
+
+.wrapper
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#wrapper
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.container
+{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 6rem;
+  justify-content: space-between;
+  
+}
+
+.logo
+{
+  display: flex;
+  padding: 0 1.5rem 0 0;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  img
+  {
+    max-width: 100px;
+    max-height: 85px;
+  }
+}
+
+.nav-table
+{
+
+  padding-left: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  
+  li
+  {
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    a
+    {
+      height: 100%;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding: 3px 12px;
+      &:hover
+      {
+        border-bottom: 3px solid blue;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.icons
+{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 100%;
+  ul
+  {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    li
+    {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      a{
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        padding: 3px 0.75rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        &:hover
+        {
+          border-bottom: 3px solid blue;
+          padding-bottom: 0;
+        }
+        i
+        {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          font-weight: 600;
+          color: white;
+
+        }
+      }
+    }
+  }
+}
+
+#border-nav
+{
+  width: calc(100% - 12rem);
+  height: 1px;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 2px;
+  border-bottom: 2px solid white;
+}
+
+
+#main-body
+{
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
