@@ -1,7 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 body {
   margin: 0;
-  background-color: aquamarine;
+  background-color: white;
 }
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +11,7 @@ body {
   height: 85px;
   position: absolute;
   background: rgba(0, 0, 0, 0);
+  z-index: 1000;
 }
 .wrapper {
   width: 100%;
@@ -128,4 +129,126 @@ body {
   width: 100%;
   position: relative;
   height: 100%;
+}
+.image-container {
+  width: 100%;
+  height: 850px;
+  text-align: center;
+  position: relative;
+  background: url(pictures/cq5dam.resized.img.1680.large.time1669651502064.jpg) center center no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.image-text {
+  color: white;
+  margin-left: 6rem;
+  top: 87px;
+  position: absolute;
+  width: fit-content;
+  text-align: left;
+}
+.image-text h4 {
+  font-weight: 100;
+  margin-bottom: 0;
+  width: 100%;
+}
+.image-text .spacing {
+  letter-spacing: 1.5px;
+  padding-left: 10px;
+}
+.image-text .nomargin {
+  margin: 0;
+}
+.image-text .name {
+  font-weight: 300;
+  font-size: 12rem;
+  line-height: 11rem;
+}
+.image-text h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.image-text .h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 200;
+}
+.image-text .buttons {
+  display: flex;
+}
+.image-text .buttons .blue {
+  background-color: #0000ff;
+  margin: 1px;
+}
+.image-text .buttons .blue:hover {
+  background-color: #000080;
+}
+.image-text .buttons .trans {
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: transparent;
+  margin: 1px;
+}
+.image-text .buttons .trans:hover {
+  border-radius: 0px;
+  border: 0px solid white;
+}
+.image-text .buttons .button {
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.context {
+  text-decoration: none ;
+  width: 100%;
+}
+.context .center {
+  text-align: center;
+}
+.context .textak {
+  text-decoration: none;
+  margin-top: 70px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: #262626;
+}
+.context .textak h2 {
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 0;
+}
+.context .vozy {
+  width: 100%;
+  display: flex;
+}
+.context .flexing {
+  color: #262626;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.context .flexing img {
+  width: 100%;
+}
+.context .flexing .button {
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+.context .flexing .trans {
+  color: #262626;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 1px;
+}
+.context .flexing .trans:hover {
+  border-radius: 0px;
+  border: 0px solid #262626;
 }
