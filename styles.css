@@ -3,6 +3,11 @@ body {
   margin: 0;
   background-color: white;
 }
+.marginner {
+  position: relative;
+  margin: auto;
+  max-width: 1925px;
+}
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -133,6 +138,7 @@ body {
 .image-container {
   width: 100%;
   height: 850px;
+  max-height: 43vw;
   text-align: center;
   position: relative;
   background: url(pictures/cq5dam.resized.img.1680.large.time1669651502064.jpg) center center no-repeat;
@@ -159,10 +165,29 @@ body {
 .image-text .nomargin {
   margin: 0;
 }
+.image-text .the_new {
+  margin-top: 70px;
+}
 .image-text .name {
   font-weight: 300;
   font-size: 12rem;
   line-height: 11rem;
+}
+.image-text .first_electric {
+  padding-left: 55px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0;
+}
+.image-text .first_electric::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  background-image: url('pictures/BMW_i_100px.png.asset.1583221945801.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 17px;
 }
 .image-text h1 {
   font-weight: 300;
@@ -175,14 +200,18 @@ body {
   font-weight: 200;
 }
 .image-text .buttons {
+  margin-top: 10px;
   display: flex;
+  gap: 15px;
+  position: relative;
+  height: max-content;
 }
 .image-text .buttons .blue {
-  background-color: #0000ff;
+  background-color: #1c69d4;
   margin: 1px;
 }
 .image-text .buttons .blue:hover {
-  background-color: #000080;
+  background-color: #1c69b4;
 }
 .image-text .buttons .trans {
   color: white;
@@ -192,63 +221,191 @@ body {
   margin: 1px;
 }
 .image-text .buttons .trans:hover {
+  margin: 2px;
   border-radius: 0px;
   border: 0px solid white;
 }
 .image-text .buttons .button {
-  margin-right: 1rem;
-  padding: 1rem 2rem;
+  border-radius: 4px;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 100px;
+  padding: 0.5rem 2rem;
   color: white;
   text-decoration: none;
+  text-align: center;
   font-weight: 600;
 }
-.context {
+.discover_context {
   text-decoration: none ;
   width: 100%;
+  margin: auto;
+  max-width: 80%;
 }
-.context .center {
+.discover_context .center {
   text-align: center;
 }
-.context .textak {
+.discover_context .textak {
   text-decoration: none;
-  margin-top: 70px;
+  margin-top: 65px;
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 1rem;
-  color: #262626;
+  color: #666;
+  font-size: 15px;
 }
-.context .textak h2 {
+.discover_context .textak h2 {
+  color: black;
   font-weight: 100;
   font-size: 3rem;
   line-height: 4rem;
+  margin-top: 5px;
   margin-bottom: 0;
+  font-size: 48px;
 }
-.context .vozy {
+.discover_context .vozy {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
-.context .flexing {
-  color: #262626;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.discover_context .vozy .item {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.context .flexing img {
+.discover_context .vozy .item img {
   width: 100%;
+  max-width: 400px;
 }
-.context .flexing .button {
-  margin-right: 1rem;
-  padding: 1rem 2rem;
+.discover_context .vozy .item p {
+  margin: 0;
+  font-size: 20px;
+}
+.discover_context .vozy .item a {
   text-decoration: none;
-  font-weight: 600;
+  margin-top: 40px;
+  padding: 0.9rem 0.5rem;
+  width: 140px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
 }
-.context .flexing .trans {
-  color: #262626;
-  background-color: transparent;
-  border-radius: 5px;
-  border: 1px solid #262626;
+.new_i5 {
+  width: 100%;
+  height: 35vw;
+  max-height: 670px;
+  background-image: url(pictures/5-series-touring-g61-home-stage-teaser_3to1.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.new_i5 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 8.5rem;
+}
+.new_i5 .wrapper .the_new {
+  margin-top: 80px;
+  margin-bottom: 0;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.new_i5 .wrapper h1 {
+  margin: 0;
+  font-size: 12rem;
+  color: white;
+  font-weight: 500;
+}
+.new_i5 .wrapper .new_user {
+  margin: 0;
+  margin-top: -10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.new_i5 .wrapper a {
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 125px;
+  padding: 0.9rem 8.2rem;
+  width: 140px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+.bmw_stocklocator {
+  width: 100%;
+  height: 40vw;
+  max-height: 775px;
+  background-image: url(pictures/DI21_0000291351.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bmw_stocklocator .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8.5rem;
+}
+.bmw_stocklocator .wrapper .stocklocator {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.bmw_stocklocator .wrapper h1 {
+  margin: 0;
+  font-size: 4rem;
+  width: 50vw;
+  min-width: 400px;
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.bmw_stocklocator .wrapper a {
+  text-decoration: none;
+  margin-bottom: 60px;
+  padding: 0.9rem 2rem;
+  max-width: max-content;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #1c69d4;
   margin: 1px;
 }
-.context .flexing .trans:hover {
-  border-radius: 0px;
-  border: 0px solid #262626;
+.bmw_stocklocator .wrapper a:hover {
+  background-color: #1c69b4;
+}
+.disclaimer {
+  width: 100%;
+  position: relative;
+}
+.disclaimer .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8.5rem;
+  letter-spacing: 0px;
+  font-size: 13px;
+  width: calc(100% - 17rem);
+}
+.disclaimer .wrapper p {
+  margin: 0;
+}
+.disclaimer .wrapper a {
+  color: black;
+  font-weight: bold;
 }
