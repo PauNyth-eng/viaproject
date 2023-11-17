@@ -10,6 +10,7 @@ body {
 }
 * {
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 #global-nav {
   width: 100%;
@@ -297,6 +298,10 @@ body {
   font-weight: bold;
   color: black;
 }
+.discover_context .vozy .item a:hover {
+  border: 1px solid white;
+  border-radius: 3px;
+}
 .new_i5 {
   width: 100%;
   height: 35vw;
@@ -343,6 +348,10 @@ body {
   font-size: 17px;
   font-weight: bold;
   color: white;
+}
+.new_i5 .wrapper a:hover {
+  border: 1px solid black;
+  border-radius: 3px;
 }
 .bmw_stocklocator {
   width: 100%;
@@ -393,6 +402,7 @@ body {
 .disclaimer {
   width: 100%;
   position: relative;
+  margin-top: 10px;
 }
 .disclaimer .wrapper {
   display: flex;
@@ -400,6 +410,7 @@ body {
   padding-left: 8.5rem;
   letter-spacing: 0px;
   font-size: 13px;
+  margin-bottom: 10px;
   width: calc(100% - 17rem);
 }
 .disclaimer .wrapper p {
@@ -408,4 +419,309 @@ body {
 .disclaimer .wrapper a {
   color: black;
   font-weight: bold;
+}
+.new_i5_2 {
+  width: 100%;
+  height: 670px;
+  max-height: 670px;
+  background-image: url(pictures/g60_bev_home-stage_dsk_sl_de-1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.new_i5_2 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8.5rem;
+}
+.new_i5_2 .wrapper .the_new_2 {
+  margin-top: 80px;
+  margin-bottom: 0;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.new_i5_2 .wrapper h1 {
+  margin: 0;
+  font-size: 12rem;
+  color: white;
+  font-weight: 500;
+}
+.new_i5_2 .wrapper .spacing {
+  letter-spacing: 1.5px;
+}
+.new_i5_2 .wrapper .nomargin {
+  margin: 0;
+  max-width: 50%;
+}
+.new_i5_2 .wrapper .rich {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0;
+}
+.new_i5_2 .wrapper .rich::before {
+  content: '';
+  position: relative;
+  background-image: url('pictures/BMW_i_100px.png.asset.1583221945801.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 17px;
+}
+.new_i5_2 .wrapper .h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 200;
+  color: white;
+}
+.new_i5_2 .wrapper .buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  position: relative;
+  height: max-content;
+}
+.new_i5_2 .wrapper .buttons .blue {
+  background-color: #1c69d4;
+  margin: 1px;
+}
+.new_i5_2 .wrapper .buttons .blue:hover {
+  background-color: #1c69b4;
+}
+.new_i5_2 .wrapper .buttons .trans {
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: transparent;
+  margin: 1px;
+}
+.new_i5_2 .wrapper .buttons .trans:hover {
+  margin: 2px;
+  border-radius: 0px;
+  border: 0px solid white;
+}
+.new_i5_2 .wrapper .buttons .button {
+  border-radius: 4px;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 100px;
+  padding: 0.5rem 2rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+}
+.radost {
+  width: 100%;
+  height: 40vw;
+  max-height: 775px;
+  background-image: url(pictures/BMW3.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.radost .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8.5rem;
+}
+.radost .radost_2 {
+  margin-bottom: 0;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.radost .h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: white;
+  font-weight: 100;
+  max-width: 50%;
+  margin-top: 10px;
+}
+.radost a {
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 125px;
+  padding: 0.9rem 8.2rem;
+  width: 140px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+.radost a:hover {
+  border: 0px solid black;
+  border-radius: 3px;
+}
+.elektro {
+  width: 100%;
+  height: 40vw;
+  max-height: 670px;
+  background-image: url(pictures/BEV-Range_v2-0-new.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.elektro .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8.5rem;
+}
+.elektro .elektromonibila {
+  margin-bottom: 0;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.elektro .h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: white;
+  max-width: 50%;
+  margin-top: 10px;
+}
+.elektro a {
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 125px;
+  padding: 0.9rem 8.2rem;
+  width: 140px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+.elektro a:hover {
+  border: 0px solid black;
+  border-radius: 3px;
+}
+.almost_end {
+  width: 100%;
+  height: 40vw;
+  max-height: 550px;
+}
+.almost_end .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 6rem;
+  max-height: 550px;
+}
+.almost_end .img {
+  width: 50%;
+  height: 40vw;
+  max-height: 100%;
+  background-image: url(pictures/di22-000095417.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+.almost_end .informations {
+  width: 50%;
+  margin-left: 20px;
+  max-height: 100%;
+}
+.almost_end .servis {
+  margin-bottom: 0;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 10%;
+}
+.almost_end .RELAX {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 4rem;
+  color: black;
+  margin-top: 10px;
+}
+.almost_end .others {
+  color: black;
+  margin: 0;
+}
+.almost_end .hesh {
+  color: black;
+  margin-bottom: 40px;
+}
+.almost_end a {
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 125px;
+  padding: 0.9rem 6rem;
+  width: 140px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+}
+.almost_end a:hover {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.almost_end .line {
+  width: 100%;
+  height: 1px;
+  border: 1px solid gray;
+}
+.nabidka {
+  display: flex;
+  flex-direction: row;
+  padding-left: 6rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+.nabidka .nab {
+  font-size: 0.625rem;
+  letter-spacing: 2px;
+  margin-right: 2rem;
+}
+.nabidka a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+.nabidka a:hover {
+  color: blue;
+}
+footer {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background-color: #f2f2f2;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+footer .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+}
+footer .content a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+footer .content a:hover {
+  color: blue;
+}
+footer .content h5 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin-bottom: 0;
 }

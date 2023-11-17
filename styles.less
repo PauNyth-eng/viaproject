@@ -15,6 +15,7 @@ body{
 *
 {
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 #global-nav {
@@ -354,6 +355,11 @@ body{
         font-size: 17px;
         font-weight: bold;
         color: black;
+        &:hover
+        {
+          border: 1px solid white;
+          border-radius: 3px;
+        }
       }
     }
   }
@@ -404,6 +410,11 @@ body{
       font-size: 17px;
       font-weight: bold;
       color: white;
+      &:hover
+      {
+        border: 1px solid black;
+        border-radius: 3px;
+      }
     }
   }
 }
@@ -460,13 +471,14 @@ body{
 .disclaimer {
   width: 100%;
   position: relative;
-
+  margin-top: 10px;
   .wrapper {
     display: flex;
     flex-direction: column;
     padding-left: 8.5rem;
     letter-spacing: -0px;
     font-size: 13px;
+    margin-bottom: 10px;
     width: calc(100% - 17.0rem);
     p {
       margin: 0;
@@ -475,6 +487,357 @@ body{
     a {
       color: black;
       font-weight: bold;
+    }
+  }
+}
+
+
+.new_i5_2 {
+  width: 100%;
+  height: 670px;
+  max-height: 670px;
+  background-image: url(pictures/g60_bev_home-stage_dsk_sl_de-1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8.5rem;
+    .the_new_2 {
+      margin-top: 80px;
+      margin-bottom: 0;
+      color: white;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    h1 {
+      margin: 0;
+      font-size: 12rem;
+      color: white;
+      font-weight: 500;
+    }
+    .spacing
+    {
+      letter-spacing: 1.5px;
+    }
+    .nomargin
+    {
+      margin:0;
+      max-width: 50%;
+    }
+
+    .rich {
+      display: flex;
+      align-items: center;
+      letter-spacing: 0;
+      &::before {
+        content: '';
+        position: relative;
+        background-image: url('pictures/BMW_i_100px.png.asset.1583221945801.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 17px;
+      }
+    }
+
+    .h2
+    {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 200;
+      color: white;
+    }
+    .buttons
+  {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    position: relative;
+    height: max-content;
+    .blue
+    {
+      background-color: #1c69d4;
+      margin: 1px;
+      &:hover
+      {
+        background-color: #1c69b4;
+      }
+    }
+    .trans
+    {
+      color: white;
+      border-radius: 5px;
+      border: 1px solid white;
+      background-color: transparent;
+      margin: 1px;
+      &:hover
+      {
+        margin: 2px;
+        border-radius: 0px;
+        border: 0px solid white;
+      }
+    }
+    .button
+    {
+      border-radius: 4px;
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      max-width: 100px;
+      padding: 0.5rem 2rem;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+  }
+}
+
+.radost
+{
+  width: 100%;
+  height: 40vw;
+  max-height: 775px;
+  background-image: url(pictures/BMW3.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8.5rem;
+  }
+
+  .radost_2 {
+    margin-bottom: 0;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  .h1 {
+    margin: 0;
+    font-size: 4rem;
+    color: white;
+    font-weight: 100;
+    max-width: 50%;
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 125px;
+    padding: 0.9rem 8.2rem;
+    width: 140px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    &:hover
+    {
+      border: 0px solid black;
+      border-radius: 3px;
+    }
+  }
+}
+
+.elektro
+{
+  width: 100%;
+  height: 40vw;
+  max-height: 670px;
+  background-image: url(pictures/BEV-Range_v2-0-new.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8.5rem;
+  }
+  .elektromonibila {
+    margin-bottom: 0;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  .h1 {
+    margin: 0;
+    font-size: 4rem;
+    color: white;
+    max-width: 50%;
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 125px;
+    padding: 0.9rem 8.2rem;
+    width: 140px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    &:hover
+    {
+      border: 0px solid black;
+      border-radius: 3px;
+    }
+  }
+}
+
+
+.almost_end
+{
+  width: 100%;
+  height: 40vw;
+  max-height: 550px;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 6rem;
+    max-height: 550px;
+  }
+  .img
+  {
+    width: 50%;
+    height: 40vw;
+    max-height: 100%;
+    background-image: url(pictures/di22-000095417.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+  }
+
+  .informations
+  {
+    width: 50%;
+    margin-left: 20px;
+    max-height: 100%;
+  }
+  .servis {
+    margin-bottom: 0;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 10%;
+  }
+
+  .RELAX {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    color: black;
+    margin-top: 10px;
+  }
+
+  .others
+  {
+    color: black;
+    margin: 0;
+  }
+
+  .hesh
+  {
+    color: black;
+    margin-bottom: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 125px;
+    padding: 0.9rem 6rem;
+    width: 140px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    &:hover
+    {
+      border: 1px solid white;
+      border-radius: 3px;
+    }
+  }
+  .line
+{
+  width: 100%;
+  height: 1px;
+  border: 1px solid gray;
+
+}
+}
+
+.nabidka
+{
+  display: flex;
+  flex-direction: row;
+  padding-left: 6rem;
+  align-items: center;
+  margin: 2rem 0;
+  .nab
+  {
+    font-size: .625rem;
+    letter-spacing: 2px;
+    margin-right: 2rem;
+  }
+  a
+  {
+    text-decoration: none;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    &:hover
+    {
+      color: blue;
+    }
+  }
+}
+
+footer
+{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background-color: #f2f2f2;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  .content
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    a
+    {
+      display: flex;
+      text-decoration: none;
+      color: black;
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.25rem;
+      &:hover
+      {
+        color: blue;
+      }
+    }
+    h5
+    {
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.25rem;
+      margin-bottom: 0;
     }
   }
 }
