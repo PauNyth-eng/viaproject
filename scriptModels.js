@@ -2,8 +2,9 @@
 const globalNav = document.getElementById("global-nav");
 const logo = globalNav.querySelector(".logo img");
 
+const buttons = document.querySelectorAll(".ELOMAN");
 function removeNavOpen() {
-    logo.setAttribute("src", "pictures/BMW_white.svg");
+    logo.setAttribute("src", "pictures/BMW_grey.svg");
     globalNav.classList.remove("active");
     document.querySelectorAll(".nav-table li.active").forEach((item) => {
         item.classList.remove("active");
@@ -24,3 +25,10 @@ document.querySelectorAll(".nav-table > li span").forEach(function(el) {
         document.body.style.overflow = 'hidden'
     });
 });
+
+function FillThen(el){
+    if (el.classList.contains('clicked'))
+      el.classList.remove('clicked');
+    else
+      el.classList.add('clicked');
+};

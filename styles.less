@@ -17,7 +17,6 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
-
 #global-nav {
   position: relative;
   width: 100%;
@@ -119,6 +118,134 @@ body{
         a, span {
           color: #666;
         }
+      }
+    }
+  }
+
+
+}
+
+
+.nakupujte{
+  height: 45vh;
+  padding: 0 6rem;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  .left_side{
+    position: relative;
+    max-width: 50%;
+    text-align: right;
+    margin-left: 30%;
+    padding-right:  20px;
+    .main{
+      display: block;
+      font-size: .625rem;
+      font-weight: 300;
+      letter-spacing: .125rem;
+      line-height: .75rem;
+      margin-bottom: 1rem;
+      position: relative;
+      text-transform: uppercase;
+    }
+    .special{
+      &::after {
+        content: ' >';
+        top: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    .text{
+      border: 0;
+      box-shadow: none;
+      cursor: pointer;
+      font-size: .875rem;
+      font-weight: 700;
+      line-height: 1.25rem;
+      margin: 0;
+      margin-bottom: 1rem;
+
+      &:hover{
+        color: blue;
+      }
+    }
+  }
+  .right_side{
+    position: relative;
+    max-width: 50%;
+    text-align: left;
+    flex: 1;
+
+    img{
+      width: 45%;
+    }
+
+    .text{
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5rem;
+      width: 45%;
+    }
+
+    .better_text{
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.25rem;
+      cursor: pointer;
+
+      &:hover{
+        color: blue;
+      }
+      &::after {
+        content: ' >';
+        top: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.vice_bmw{
+  height: 80vh;
+  padding: 0 6rem;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  overflow-y: scroll;
+  .box{
+     padding-left: 10px;
+     padding-right: 10px;
+     width: 25%; 
+     text-align: left;
+     position: relative;
+     .main{
+      display: block;
+      font-size: .625rem;
+      font-weight: 300;
+      letter-spacing: .125rem;
+      line-height: .75rem;
+      margin-bottom: 1rem;
+      position: relative;
+      text-transform: uppercase;
+    }
+    .text{
+      border: 0;
+      box-shadow: none;
+      cursor: pointer;
+      font-size: .875rem;
+      font-weight: 800;
+      line-height: 1.25rem;
+      margin: 0;
+      margin-bottom: 1rem;
+
+      &:hover{
+        color: blue;
       }
     }
   }

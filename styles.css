@@ -105,6 +105,121 @@ body {
 #global-nav.active .nav-table li span {
   color: #666;
 }
+.nakupujte {
+  height: 45vh;
+  padding: 0 6rem;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+}
+.nakupujte .left_side {
+  position: relative;
+  max-width: 50%;
+  text-align: right;
+  margin-left: 30%;
+  padding-right: 20px;
+}
+.nakupujte .left_side .main {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 300;
+  letter-spacing: 0.125rem;
+  line-height: 0.75rem;
+  margin-bottom: 1rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.nakupujte .left_side .special::after {
+  content: ' >';
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.nakupujte .left_side .text {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.nakupujte .left_side .text:hover {
+  color: blue;
+}
+.nakupujte .right_side {
+  position: relative;
+  max-width: 50%;
+  text-align: left;
+  flex: 1;
+}
+.nakupujte .right_side img {
+  width: 45%;
+}
+.nakupujte .right_side .text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  width: 45%;
+}
+.nakupujte .right_side .better_text {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+.nakupujte .right_side .better_text:hover {
+  color: blue;
+}
+.nakupujte .right_side .better_text::after {
+  content: ' >';
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.vice_bmw {
+  height: 80vh;
+  padding: 0 6rem;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  overflow-y: scroll;
+}
+.vice_bmw .box {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25%;
+  text-align: left;
+  position: relative;
+}
+.vice_bmw .box .main {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 300;
+  letter-spacing: 0.125rem;
+  line-height: 0.75rem;
+  margin-bottom: 1rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.vice_bmw .box .text {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.25rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.vice_bmw .box .text:hover {
+  color: blue;
+}
 .electromobility {
   height: 80vh;
   padding: 0 6rem;
