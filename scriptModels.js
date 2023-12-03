@@ -1,8 +1,8 @@
 
 const globalNav = document.getElementById("global-nav");
 const logo = globalNav.querySelector(".logo img");
+const fixedNav = document.querySelector('.fixed_nav');
 
-const buttons = document.querySelectorAll(".ELOMAN");
 function removeNavOpen() {
     logo.setAttribute("src", "pictures/BMW_grey.svg");
     globalNav.classList.remove("active");
@@ -32,3 +32,12 @@ function FillThen(el){
     else
       el.classList.add('clicked');
 };
+
+document.addEventListener('scroll', function() {
+  let scroll = document.documentElement.scrollTop;
+
+  if (scroll >= 380) 
+    fixedNav.classList.add('beFixed');
+  else 
+    fixedNav.classList.remove('beFixed');
+});

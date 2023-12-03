@@ -7,6 +7,7 @@ body {
 .marginner {
   position: relative;
   margin: auto;
+  height: 100%;
 }
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -427,7 +428,10 @@ body {
 }
 #main-body {
   width: 100%;
+  height: 100%;
   position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 #main-body .content {
   margin-top: 4rem;
@@ -486,19 +490,24 @@ body {
 #main-body .content .model_content {
   margin-top: 50px;
   width: 100%;
+  height: inherit;
   position: relative;
+  margin-bottom: 150px;
 }
 #main-body .content .model_content .fixed_nav {
+  background-color: white;
+  opacity: 0.95;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  position: fixed;
   height: 4rem;
   text-align: center;
   align-items: center;
+  z-index: 10000;
   width: 100%;
 }
 #main-body .content .model_content .fixed_nav div {
+  opacity: 1;
   text-align: center;
   align-items: center;
   height: inherit;
@@ -506,6 +515,7 @@ body {
   display: flex;
 }
 #main-body .content .model_content .fixed_nav div span {
+  opacity: 1;
   border-color: #0000;
   border-style: solid;
   border-width: 0.25rem 0;
@@ -528,29 +538,34 @@ body {
   border-bottom: 3px solid #666;
   margin-bottom: 0;
 }
+#main-body .content .model_content .beFixed {
+  position: fixed;
+  top: 0;
+}
 #main-body .content .model_content .car_items {
   top: 4rem;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: row;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
 }
-#main-body .content .model_content .car_items .BMWI {
+#main-body .content .model_content .car_items .models {
   display: flex;
+  flex-wrap: wrap;
 }
-#main-body .content .model_content .car_items .BMWI .item_car {
+#main-body .content .model_content .car_items .models .item_car {
   cursor: pointer;
   position: relative;
   padding: 10px;
   width: 25%;
 }
-#main-body .content .model_content .car_items .BMWI .item_car .item_title {
+#main-body .content .model_content .car_items .models .item_car .item_title {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-#main-body .content .model_content .car_items .BMWI .item_car .item_title h5 {
+#main-body .content .model_content .car_items .models .item_car .item_title h5 {
   margin: 0;
   color: #262626;
   font-size: 1rem;
@@ -558,7 +573,7 @@ body {
   line-height: 1.5rem;
   text-transform: uppercase;
 }
-#main-body .content .model_content .car_items .BMWI .item_car .item_title span {
+#main-body .content .model_content .car_items .models .item_car .item_title span {
   color: #4d4d4d;
   font-size: 0.75rem;
   font-weight: 1000;
@@ -566,15 +581,29 @@ body {
   text-transform: uppercase;
   padding-bottom: 2px;
 }
-#main-body .content .model_content .car_items .BMWI .item_car .item_title p {
+#main-body .content .model_content .car_items .models .item_car .item_title p {
   margin: 0;
 }
-#main-body .content .model_content .car_items .BMWI .item_car img {
+#main-body .content .model_content .car_items .models .item_car img {
   width: 100%;
 }
-#main-body .content .model_content .car_items .BMWI .item_car > img {
+#main-body .content .model_content .car_items .models .item_car > img {
   transition: scale 300ms ease-in-out;
 }
-#main-body .content .model_content .car_items .BMWI .item_car:hover > img {
+#main-body .content .model_content .car_items .models .item_car:hover > img {
   scale: 1.1;
+}
+#main-body .content .table_meme {
+  width: 100%;
+  position: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#main-body .content .table_meme div {
+  position: relative;
+  display: flex;
+  width: 33.33%;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }

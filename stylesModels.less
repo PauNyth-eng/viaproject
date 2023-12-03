@@ -10,7 +10,7 @@ body{
 .marginner {
   position: relative;
   margin: auto;
-
+    height: 100%;
 }
 
 *
@@ -485,7 +485,10 @@ body{
 
 #main-body {
     width: 100%;
+    height: 100%;
     position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
     .content{
         margin-top: 4rem;
         padding: 0 6rem; 
@@ -552,23 +555,29 @@ body{
         .model_content{
             margin-top: 50px;
             width: 100%;
+            height: inherit;
             position: relative;
+            margin-bottom: 150px;
             .fixed_nav{
+                background-color: white;
+                opacity: 0.95;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
-                position: fixed;
                 height: 4rem;
                 text-align: center;
                 align-items: center;
+                z-index: 10000;
                 width: 100%;
                 div{
+                    opacity: 1;
                     text-align: center;
                     align-items: center;
                     height: inherit;
                     margin-bottom: 3px;
                     display: flex;
                     span{
+                        opacity: 1;
                         border-color: #0000;
                         border-style: solid;
                         border-width: 0.25rem 0;
@@ -596,15 +605,22 @@ body{
                 }
             }
 
+            .beFixed{
+                position: fixed;
+                top: 0;
+            }
+
             .car_items{
                 top: 4rem;
-                position: absolute;
+                position: relative;
                 display: flex;
                 flex-direction: row;
-                flex-direction: column;
+                flex-wrap: wrap;
                 width: 100%;
-                .BMWI{
+                .models{
+
                     display: flex;
+                    flex-wrap: wrap;
                     .item_car {
                         cursor: pointer;
                         position: relative;
@@ -647,6 +663,23 @@ body{
                           }
                       }
                 }
+
+            }
+        }
+
+        .table_meme{
+            width: 100%;
+            position: inherit;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            div{
+                position: relative;
+                display: flex;
+                width: 33.33%;
+                flex-direction: column;
+                flex-wrap: nowrap;
             }
         }
     }
