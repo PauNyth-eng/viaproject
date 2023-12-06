@@ -387,6 +387,9 @@ body {
   list-style: none;
   height: 100%;
 }
+.icons .hello_there {
+  color: black;
+}
 .icons ul {
   align-items: center;
   justify-content: center;
@@ -988,35 +991,94 @@ body {
 .nabidka a:hover {
   color: blue;
 }
-footer {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 100px;
-  background-color: #f2f2f2;
-  padding-left: 6rem;
-  padding-right: 6rem;
+.foot_helper {
+  background-color: #e6e6e6;
 }
-footer .content {
+.footer {
+  width: 100%;
+}
+.footer .pain_footer {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  background-color: #e6e6e6;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer .pain_footer .box {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25%;
+  text-align: left;
+  position: relative;
+}
+.footer .pain_footer .box .main {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 300;
+  letter-spacing: 0.125rem;
+  line-height: 0.75rem;
+  margin-bottom: 1rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer .pain_footer .box .text {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #4d4d4d;
+}
+.footer .pain_footer .box .text:hover {
+  color: black;
+}
+.footer .pain_footer .box .special::after {
+  content: '>';
+}
+.footer .thanking {
+  width: 100%;
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: black;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100px;
 }
-footer .content a {
+.footer .thanking .thank {
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1rem;
+  align-items: center;
+}
+.footer .thanking .thank > p:last-child {
+  padding-left: 10px;
+}
+.footer .thanking .another_thing {
   display: flex;
-  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+}
+.footer .thanking .another_thing p {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+  margin: 0;
   color: black;
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1.25rem;
 }
-footer .content a:hover {
+.footer .thanking .another_thing p:hover {
   color: blue;
-}
-footer .content h5 {
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1.25rem;
-  margin-bottom: 0;
 }

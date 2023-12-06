@@ -10,6 +10,7 @@ function removeNavOpen() {
         item.classList.remove("active");
     });
     document.body.style.overflow = 'scroll'
+    
 }
 
 document.querySelector(".nav_backdrop").addEventListener("click", () => {

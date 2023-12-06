@@ -424,7 +424,7 @@ body {
   height: 100%;
   text-decoration: none;
   font-weight: 600;
-  color: white;
+  color: black;
 }
 #main-body {
   width: 100%;
@@ -432,6 +432,15 @@ body {
   position: relative;
   padding-left: 10%;
   padding-right: 10%;
+}
+#main-body .all_models {
+  display: inline;
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 300;
 }
 #main-body .content {
   margin-top: 4rem;
@@ -596,14 +605,164 @@ body {
 #main-body .content .table_meme {
   width: 100%;
   position: inherit;
+  display: block;
+}
+#main-body .content .table_meme .table_meme_in {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2.5rem;
+  list-style: none;
+  display: grid;
+  grid-gap: 0 1.5rem;
+  padding: 0;
+}
+#main-body .content .table_meme .table_meme_in li {
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  padding: 1rem 0;
+}
+#main-body .content .table_meme .table_meme_in li div {
+  background-color: initial;
+  border: initial;
+  color: initial;
+  display: block;
+  height: auto;
+  margin: 0;
+  min-width: auto;
+  padding: 0;
+  text-align: initial;
+  transition: none;
+  width: 100%;
+}
+#main-body .content .table_meme .table_meme_in li div a {
+  background: #0000;
+  color: #262626;
+  align-items: center;
+  border: 0;
+  box-shadow: none;
+  font-size: 1rem;
+  font-weight: 300;
+  justify-content: space-between;
+  line-height: 1.5rem;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: start;
+  width: 100%;
+  display: inline-flex;
+  text-decoration: none;
+}
+#main-body .content .table_meme .table_meme_in li div a:after {
+  word-wrap: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  color: #666;
+  content: ">";
+  direction: ltr;
+  display: block;
+  font-family: bmw_next_icons;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  height: 1em;
+  line-height: 1;
+  margin-right: -0.25rem;
+  outline: 1px solid #0000;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  white-space: nowrap;
+  width: 1em;
+}
+.foot_helper {
+  background-color: #e6e6e6;
+}
+.footer {
+  width: 100%;
+}
+.footer .pain_footer {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  background-color: #e6e6e6;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-#main-body .content .table_meme div {
+.footer .pain_footer .box {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25%;
+  text-align: left;
   position: relative;
+}
+.footer .pain_footer .box .main {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 300;
+  letter-spacing: 0.125rem;
+  line-height: 0.75rem;
+  margin-bottom: 1rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer .pain_footer .box .text {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #4d4d4d;
+}
+.footer .pain_footer .box .text:hover {
+  color: black;
+}
+.footer .pain_footer .box .special::after {
+  content: '  >';
+}
+.footer .thanking {
+  width: 100%;
+  background-color: white;
   display: flex;
-  width: 33.33%;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100px;
+}
+.footer .thanking .thank {
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1rem;
+  align-items: center;
+}
+.footer .thanking .thank > p:last-child {
+  padding-left: 10px;
+}
+.footer .thanking .another_thing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer .thanking .another_thing p {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+  margin: 0;
+  color: black;
+}
+.footer .thanking .another_thing p:hover {
+  color: blue;
 }

@@ -432,6 +432,7 @@ body{
 
 .icons
 {
+
   display: flex;
   height: 100%;
   align-items: center;
@@ -476,7 +477,7 @@ body{
           height: 100%;
           text-decoration: none;
           font-weight: 600;
-          color: white;
+          color: black;
         }
       }
     }
@@ -489,6 +490,16 @@ body{
     position: relative;
     padding-left: 10%;
     padding-right: 10%;
+
+    .all_models{
+        display: inline;
+        vertical-align: bottom;
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 300;
+    }
     .content{
         margin-top: 4rem;
         padding: 0 6rem; 
@@ -670,21 +681,182 @@ body{
         .table_meme{
             width: 100%;
             position: inherit;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-
-            div{
-                position: relative;
+            display: block;
+            .table_meme_in{
+              grid-template-columns: repeat(3,1fr);
+              margin-bottom: 2.5rem;
+              list-style: none;
+              display: grid;
+              grid-gap: 0 1.5rem;
+              padding: 0;
+              
+              li{
+                align-items: center;
+                border-bottom: 1px solid #e6e6e6;
                 display: flex;
-                width: 33.33%;
-                flex-direction: column;
-                flex-wrap: nowrap;
+                padding: 1rem 0;
+                div{
+                    background-color: initial;
+                    border: initial;
+                    color: initial;
+                    display: block;
+                    height: auto;
+                    margin: 0;
+                    min-width: auto;
+                    padding: 0;
+                    text-align: initial;
+                    transition: none;
+                    width: 100%;
+                    a{
+                      background: #0000;
+                      color: #262626;
+                      align-items: center;
+                      border: 0;
+                      box-shadow: none;
+                      font-size: 1rem;
+                      font-weight: 300;
+                      justify-content: space-between;
+                      line-height: 1.5rem;
+                      margin: 0;
+                      padding-left: 0;
+                      padding-right: 0;
+                      text-align: start;
+                      width: 100%;
+                      display: inline-flex;
+                      text-decoration: none;
+                      &:after
+                      {
+                        word-wrap: normal;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        font-feature-settings: "liga";
+                        color: #666;
+                        content: ">";
+                        direction: ltr;
+                        display: block;
+                        font-family: bmw_next_icons;
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        height: 1em;
+                        line-height: 1;
+                        margin-right: -0.25rem;
+                        outline: 1px solid #0000;
+                        text-align: left;
+                        text-rendering: optimizeLegibility;
+                        text-transform: none;
+                        white-space: nowrap;
+                        width: 1em;
+                      }
+                    }
+                }
+              }
             }
         }
     }
 }
 
 
+.foot_helper{
+  background-color: #e6e6e6;
+}
+.footer
+{
+  width: 100%;
+  .pain_footer
+  {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    background-color: #e6e6e6;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .box{
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 25%; 
+      text-align: left;
+      position: relative;
+      .main{
+        display: block;
+        font-size: .625rem;
+        font-weight: 300;
+        letter-spacing: .125rem;
+        line-height: .75rem;
+        margin-bottom: 1rem;
+        position: relative;
+        text-transform: uppercase;
+      }
+      .text{
+        border: 0;
+        box-shadow: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 700;
+        line-height: 1.25rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        color: #4d4d4d;
+        &:hover{
+          color: black;
+        }
+        
+      }
+      .special{
+        &::after{
+          content: '  >';
+        }
+      }
+    }
+  }
+
+  .thanking{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100px;
+    .thank{
+      display: inline-flex;
+      font-size: .75rem;
+      font-weight: 300;
+      line-height: 1rem;
+      align-items: center;
+      & > p:last-child{
+        padding-left: 10px;
+      }
+    }
+    .another_thing{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      p{
+        border: 0;
+        box-shadow: none;
+        cursor: pointer;
+        font-size: .75rem;
+        font-weight: 700;
+        line-height: 1rem;
+        margin: 0;
+        padding-right: 20px;
+        margin-bottom: 1rem;
+        margin: 0;
+        color: black;
+        &:hover{
+          color: blue;
+        }
+        
+      }
+    }
+  }
+}
 
 

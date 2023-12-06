@@ -438,6 +438,10 @@ body{
   justify-content: center;
   list-style: none;
   height: 100%;
+
+  .hello_there{
+    color: black;
+  }
   ul
   {
     align-items: center;
@@ -1124,40 +1128,104 @@ body{
   }
 }
 
-footer
+.foot_helper{
+  background-color: #e6e6e6;
+}
+.footer
 {
-  margin: 0;
   width: 100%;
-  height: 100%;
-  padding-top: 100px;
-  background-color: #f2f2f2;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  .content
+  .pain_footer
   {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    background-color: #e6e6e6;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .box{
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 25%; 
+      text-align: left;
+      position: relative;
+      .main{
+        display: block;
+        font-size: .625rem;
+        font-weight: 300;
+        letter-spacing: .125rem;
+        line-height: .75rem;
+        margin-bottom: 1rem;
+        position: relative;
+        text-transform: uppercase;
+      }
+      .text{
+        border: 0;
+        box-shadow: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 700;
+        line-height: 1.25rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        color: #4d4d4d;
+        &:hover{
+          color: black;
+        }
+        
+      }
+      .special{
+        &::after{
+          content: '>';
+        }
+      }
+    }
+  }
+
+  .thanking{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: black;
-    a
-    {
-      display: flex;
-      text-decoration: none;
-      color: black;
-      font-size: 0.875rem;
-      font-weight: 700;
-      line-height: 1.25rem;
-      &:hover
-      {
-        color: blue;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100px;
+    .thank{
+      display: inline-flex;
+      font-size: .75rem;
+      font-weight: 300;
+      line-height: 1rem;
+      align-items: center;
+      & > p:last-child{
+        padding-left: 10px;
       }
     }
-    h5
-    {
-      font-size: 0.875rem;
-      font-weight: 700;
-      line-height: 1.25rem;
-      margin-bottom: 0;
+    .another_thing{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      p{
+        border: 0;
+        box-shadow: none;
+        cursor: pointer;
+        font-size: .75rem;
+        font-weight: 700;
+        line-height: 1rem;
+        margin: 0;
+        padding-right: 20px;
+        margin-bottom: 1rem;
+        margin: 0;
+        color: black;
+        &:hover{
+          color: blue;
+        }
+        
+      }
     }
   }
 }
