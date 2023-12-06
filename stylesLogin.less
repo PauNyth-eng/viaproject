@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    background-color: white;
+    max-width: 1925px;
+    color: #2c3e50;
+    background: white;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  *
+{
+  font-family: BMWTypeNext;
+  box-sizing: border-box;
+}
+
+
+.splitter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .left_side{
+        width: 512px;
+        min-width: 512px;
+        .wrapper{
+            .data{
+                footer{
+                    width: 512px;
+                    padding: 60px 80px 20px;
+                    .__b{
+                        border-top: 1px solid #f2f2f2;
+                        width: 100%;
+                        margin-bottom: 24px;
+                    }
+
+                    .regist{
+                        width: 50%;
+                        text-align: left;
+                        margin-bottom: 16px;
+                        a{
+                            color: #262626;
+                            text-decoration: underline;
+                            cursor: pointer;
+                            display: initial;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+            overflow-y: scroll;
+            height: 100vh;
+            max-height: 100%;
+            .content{
+                padding: 80px 80px 0;
+                text-align: left;
+                .data{
+                    header{
+                        h1{
+                            margin: 0;
+                            font-size: 32px;
+                            font-weight: 300;
+                            line-height: 40px;
+                            text-transform: uppercase;
+                        }
+                        div{
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 24px;
+                            margin-top: 7px;
+                            a{
+                                color: #262626;
+                                text-decoration: underline;
+                                cursor: pointer;
+                                display: initial;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 700;
+                                &:hover
+                                {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    main{
+                        .form{
+                            margin-top: 22px;
+                            .mandatory{
+                                margin-top: 20px;
+                                font-size: 12px;
+                                color: #a5a5a5;
+                            }
+                            .hcaptcha{
+                                margin: 16px 0;
+                                font-size: 12px;
+                                line-height: 16px;
+                            }
+                            .buttons-container{
+                                .primary{
+                                    cursor: inherit;
+                                    background-color: #c2d3ed;
+                                    color: #fff;
+                                    width: 100%;
+                                    height: 48px;
+                                    margin: 0;
+                                    border-radius: 0;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 22px;
+                                    text-transform: none;
+                                    border: none;
+                                }
+                            }
+                            .something_random{
+                                
+                                .consents{
+                                    margin-bottom: 16px;
+                                    .title{
+                                        margin-top: 15px;
+                                        font-size: 14px;
+                                        font-weight: 700;
+                                    }
+                                    .all{
+                                        margin-bottom: 10px;
+                                        .data{
+                                            .all_in_one{
+                                                flex-wrap: wrap;
+                                                display: flex;
+                                                align-items: baseline;
+                                                padding-top: 0;
+                                                .consent{
+                                                    display: inline;
+                                                    font-size: 16px;
+                                                    line-height: 24px;
+                                                    width: 90%;
+                                                    p{
+                                                        font-size: 16px;
+                                                        margin: 10px;
+                                                        margin-left: 15px;
+                                                        span{
+                                                            line-height: 24px;
+                                                        }
+                                                    }
+                                                }
+                                
+                                                .custom_input{
+                                                    width: auto;
+                                                    .checkbox{
+                                                        display: block;
+                                                        position: relative;
+                                                        cursor: pointer;
+                                                        font-size: 20px;
+                                                        #check{
+                                                            visibility: hidden;
+                                                        }
+                                                        span{
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            margin: 0;
+                                                            margin-right: 10px;
+                                                            display: grid;
+                                                            place-content: center;
+                                                            border-radius: 0;
+                                                            min-width: 16px;
+                                                            margin-top: 0;
+                                                            height: 24px;
+                                                            width: 24px;
+                                                            border: 2px solid #c4c4c4;
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                            .custom_field{
+                                margin: 0 0 18px;
+                                position: relative;
+                                label{
+                                    font-size: 14px;
+                                }
+                                div{
+                                    position: relative;
+                                    input{
+                                        position: relative;
+                                        font-family: inherit;
+                                        border: 1px solid #bbb;
+                                        width: 100%;
+                                        line-height: 1em;
+                                        padding: 11px;
+                                        padding-right: 45px;
+                                        min-width: 0;
+                                        color: #262626;
+                                        font-size: 16px;
+                                        height: 48px;
+                                    }
+                                    .red_input{
+                                        border: 1px solid red;  
+                                    }
+                                    .custom_icon{
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        right: 20px;
+                                        color: #d20000;
+                                        top: 14px;
+                                        position: absolute;
+                                    }
+                                    .error_icon{
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        color: #d20000;
+                                        position: absolute;
+                                    
+                                    }
+                                    .addi_message{
+                                        font-weight: 300;
+                                        color: #666;
+                                        margin-top: 5px;
+                                        font-size: 12px;
+                                    }
+                                    .custom_error{
+                                        color: #d20000;
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        margin-top: 5px;
+                                    }
+                                }
+                            }
+                        }
+
+                       
+                    }
+
+                    
+                }
+            }
+        }
+    }
+    .right_side{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(pictures/background.png);
+        .logo{
+            position: absolute;
+            top: 55px;
+            right: 55px;
+        }
+    }
+}

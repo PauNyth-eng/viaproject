@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="cs">
+    <link rel="stylesheet" type="text/css" href="stylesLogin.css">
+    <script src="scriptLogin.js" defer></script>
+    <title>BMW  Česká republika</title>
+</head>
+<body>
+    <div class="splitter">
+        <div class="left_side">
+            <div class="wrapper">
+                <div class="content">
+                    <div class="data">
+                        <header>
+                            <h1>BMW ID REGISTRACE</h1>
+                            <div>
+                                Již máte BMW ID? Přihlašte se  <a href="#">zde</a> .
+                            </div>
+                        </header>
+                        <main>
+                            <form novalidate class="form registration-form">
+                                <div class="custom_field">
+                                    <labe>Jméno*</labe>   
+                                    <div id="f_name_div">
+                                        <input type="text" id="firstName">
+                                        <div class="custom_icon" ></div>
+                                    </div> 
+                                </div>
+                                <div class="custom_field">
+                                    <labe>Příjmení*</labe>   
+                                    <div id="l_name_div">
+                                        <input type="text" id="lastName">
+                                        <div class="custom_icon" ></div>
+                                    </div> 
+                                </div>
+                                <div class="custom_field">
+                                    <labe>E-mail*</labe>   
+                                    <div id="email_div">
+                                        <input type="text" id="email">
+                                        <div class="custom_icon" ></div>
+                                    </div> 
+                                </div>
+                                <div class="custom_field">
+                                    <labe>Heslo*</labe>   
+                                    <div id="password_div">
+                                        <input type="text" id="password" placeholder passwordrules="minlength: 10; maxlength: 40; required: lower; required: upper; required: digit; required: [-&quot;#&\'()*+,./:;@_~]">
+                                        <div class="custom_icon" ></div>
+                                    </div> 
+                                </div>
+                                <div class="something_random">
+                                    <div class="consents">
+                                        <div class="title">
+                                            <div class="text">Souhlas se zasíláním obchodních sdělení</div>
+                                        </div>
+                                        <div class="all">
+                                            <div class="data">
+                                                <div class="all_in_one">
+                                                   <div class="custom_input">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="check">
+                                                            <span></span>
+                                                        </label>
+                                                   </div> 
+                                                   <div class="consent">
+                                                    <p>
+                                                        <span>
+                                                            Přeji si od společnosti BMW dostávat obchodní sdělení emailem, poštou, telefonicky / SMS a prostřednictvím aplikace ve vozidle (je-li tato funkce podporována).
+                                                        </span>
+                                                    </p>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                            <div class="data">
+                                                <div class="all_in_one">
+                                                    <div class="custom_input">
+                                                         <label class="checkbox">
+                                                             <input type="checkbox" id="check">
+                                                             <span></span>
+                                                         </label>
+                                                    </div> 
+                                                    <div class="consent">
+                                                     <p>
+                                                         <span>
+                                                             Přeji si od společnosti BMW dostávat obchodní sdělení emailem, poštou, telefonicky / SMS a prostřednictvím aplikace ve vozidle (je-li tato funkce podporována).
+                                                         </span>
+                                                     </p>
+                                                    </div>
+                                                 </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="buttons-container">
+                                    <button class="primary" id="submit" data-v-19f24c00="">Registrovat nyní</button>
+                                </div>
+                                <div class="hcaptcha">Tato stránka používá hCaptcha. Další podrobnosti naleznete v části Ochrana osobních údajů nebo v části Právní upozornění.</div>
+                                <div class="mandatory">*Povinná pole</div>
+                            </form>  
+                        </main>
+                        
+                    </div>
+                </div>
+                <div class="data">
+                    <footer>
+                      <hr class="__b">
+                      <div class="regist">
+                        <a href="#">Právní doložka</a>
+                      </div>
+                      <div lass="regist">
+                        <a href="#">Ochrana osobních údajů</a>
+                      </div>
+                      <hr class="__b">
+                      <div lass="regist">
+                        <a href="#">Režim zobrazení</a>
+                      </div>    
+                    </footer>
+                </div>  
+            </div>  
+           
+        </div>
+        <div class="right_side">
+            <div class="logo">
+                <img alt="logo" src="https://customer.bmwgroup.com/oneid/oneidconfig/assets/brand/bmw/bmw_logo.svg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
