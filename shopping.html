@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="cs">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="stylesShopping.css">
+    <script src="scriptShopping.js" defer></script>
     <title>BMW  Česká republika</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <div id="wrapper">
           <div class="wrapper">
           <a href="index.html" class="logo">
-              <img src="pictures/BMW_white.svg" alt="BMW logo">
+              <img src="pictures/BMW_grey.svg" alt="BMW logo">
           </a>
           <ul class="nav-table">
             <li><a href="modely.html">Modely</a></li>
@@ -252,7 +252,7 @@
           <div class="icons">
             <ul>
               <li><a href="login.html"><i class="fas fa-user"></i></a></li>
-              <li><a href="shopping.html"><i class="fas fa-shopping-cart" ></i></a></li>
+              <li><a href="#"><i class="fas fa-shopping-cart" ></i></a></li>
               <li><a href="#"><i class="fas fa-map-marker"></i></a></li>
               <li><a href="#"><i class="fas fa-search"></i></a></li>
             </ul>
@@ -262,108 +262,45 @@
       <div id="border-nav"></div>
       <div class="nav_backdrop"></div>
     </header>
-    <div id="main-body">
-      <div class="image-container">
-        <div class="image-text">
-          <h4><strong>Radost</strong> z jízdy</h4> 
-          <h4 class="nomargin spacing the_new"><strong>THE NEW</strong></h4>
-          <h2 class="nomargin spacing name">iX2</h2>
-          <h1 class="h2 spacing nomargin first_electric">PRVNÍ BMW iX2. 100% ELETEKRICKÉ.</h1>
-          <div class="spacing buttons">
-              <a href="#" class="trans button "><span>Zjistit více</span></a>
-              <a href="#" class="button blue"><span>Mám zájem o nabídku</span></a>
-          </div>
+    <div class="main-body">
+        <div class="content">
+            <div class="text">
+                <h1>AKCE.</h1>
+            </div> 
+            <div id="countdown">
+                <p>New Car announced in </p>
+                <p id="timer"></p>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span id="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="img01">
+              </div>
+            <div class="slide_show">
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="pictures/5-series-touring-g61-home-stage-teaser_3to1.webp" style="width:100%" onclick="ShowModal(this)">
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="pictures/BMW3.webp" style="width:100%" onclick="ShowModal(this)">
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="pictures/BEV-Range_v2-0-new.webp" style="width:100%" onclick="ShowModal(this)">
+                  </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                  </div>
+                  <br>
+            </div>
+        </div>  
         </div>
-      </div>
-      <div class="discover_context">
-        <div class="textak center">
-          <p><strong>NÁKUPNÍ NÁSTROJE</strong></p>
-          <h2 class="RIP">OBJEVTE SVÉ BMW.</h2>
-        </div> 
-        <div class="vozy">
-          <div class="item">
-            <img src="pictures/Home.webp" alt="Something">
-            <p>Objevte nový vůz</p>
-            <a href="#" class="trans button "><span>Vyhledat nyní</span></a>
-          </div>
-          <div class="item">
-            <img src="pictures/Something.webp" alt="Something">
-            <p>Objevte ojetý vůz</p>
-            <a href="#" class="trans button "><span>Vyhledat nyní</span></a>
-          </div>
-          <div class="item">
-            <img src="pictures/Skadi.webp" alt="Something">
-            <p>Vlastní konfigurace</p>
-            <a href="#" class="trans button"><span>Možnosti a ceny</span></a>
-          </div> 
-        </div> 
-      </div>
-      <div class="new_i5">
-        <div class="wrapper">
-          <p class="the_new">THE NEW</p>
-          <h1>i5</h1>
-          <p class="new_user">2024: Nový člen rodiny bmw řady 5.</p>
-          <a href="#">Objevit více</a>
-        </div>
-      </div>
-      <div class="bmw_stocklocator">
-        <div class="wrapper">
-          <p class="stocklocator">BMW STOCKLOCATOR</p>
-          <h1>Vozy ihned k dispozici</h1>
-          <a href="#">Prohlédnout si nabídku</a>
-        </div>
-      </div>
-      <div class="new_i5_2">
-        <div class="wrapper">
-          <p class="the_new_2">THE NEW</p>
-          <h1>i5</h1>
-          <p class="h2 spacing nomargin rich">NOVÉ BMW i5. JIŽ OD 19 990 KČ BEZ DPH MĚSÍČNĚ VČETNĚ POJIŠTĚNÍ.*</p>
-          <div class="spacing buttons">
-            <a href="#" class="trans button "><span>Zjistit více</span></a>
-            <a href="#" class="button blue"><span>Mám zájem o nabídku</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="disclaimer">
-        <div class="wrapper">
-          <p class="">*Tato příkladová kalkulace byla vytvořena pro model BMW i5 eDrive40 s pořizovací cenou 1 751 153 Kč vč. DPH. Uvedená splátka operativního leasingu je určena pro podnikatele i nepodnikatele a je kalkulována pro délku nájmu 60 měsíců a roční nájezd 15 000 km a s DPH činí 24 188 Kč. Splátka obsahuje povinné ručení, havarijní pojištění, pojištění skel a GAP. Detaily konfigurace, ceny vozu a kalkulaci financování Vám poskytne autorizovaný partner BMW v České republice. Každá žádost o financování podléhá schválení ze strany BMW Financial Services Czech Republic s.r.o. Smlouvy o financování mohou být uzavřeny pouze v písemné formě. Podmínky operativního leasingu jsou dostupné na <a href="#">www.bmwfs.cz</a>. Tato akce platí do odvolání, nejpozději do 31.12.2023. Uvedená fotografie je ilustrativní. Oficiální spotřeba elektřiny (kombinovaná): 18,8-16 kWh/100 km, Emise CO2 (kombinované): 0 g/km.</p>
-        </div>
-      </div>
-      <div class="radost">
-        <div class="wrapper">
-          <p class="radost_2">RADOST NA DOSAH</p>
-          <p class="h1">AKČNÍ NABÍDKA BMW FINANCIAL SERVICES.</p>
-          <a href="#">Objevte výhodné slátky</a>
-        </div>
-      </div>
-      <div class="elektro">
-        <div class="wrapper">
-          <p class="elektromonibila">BMW ELEKTROMOBILITA</p>
-          <p class="h1">ELEKTRIZUJÍCÍ RADOST Z JÍZDY.</p>
-          <a href="#">Objevit více</a>
-        </div>
-      </div>
-      <div class="almost_end">
-        <div class="wrapper">
-          <div class="img"></div>  
-          <div class="informations">
-            <p class="servis">BMW SERVICE</p>
-            <p class="RELAX">RELAX. WE CARE.</p>
-            <p class="others">Dobrý servis je nezavislý na čase a místě. Zažijte navý druh servisu. Kdykoliv. Odkudkoliv.</p>
-            <p class="hesh">#WhateverHappens</p>
-            <a href="#">Více informací</a>
-          </div>
-        </div>
-        <div class="line">
-      
-        </div>    
-      </div>
-     <div class="nabidka">
-      <p class="nab">PŘEHLED MODELŮ BMW</p>
-      <a href="#">Nabídka vozů</a>
-     </div>
     </div>
   </div>
+
   <div class="foot_helper">
     <div class="footer">
         <div class="pain_footer">
