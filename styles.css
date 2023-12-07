@@ -531,10 +531,17 @@ body {
   align-items: center;
   max-width: 100px;
   padding: 0.5rem 2rem;
-  color: white;
-  text-decoration: none;
-  text-align: center;
   font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 60px;
+  padding: 0.9rem 2rem;
+  max-width: max-content;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  margin: 1px;
 }
 .discover_context {
   text-decoration: none ;
@@ -639,13 +646,15 @@ body {
   margin-top: 25px;
   margin-bottom: 125px;
   padding: 0.9rem 8.2rem;
-  width: 140px;
-  text-align: center;
+  width: 23rem;
   border: 1px solid white;
   border-radius: 3px;
   font-size: 17px;
   font-weight: bold;
   color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .new_i5 .wrapper a:hover {
   border: 1px solid black;
@@ -805,10 +814,17 @@ body {
   align-items: center;
   max-width: 100px;
   padding: 0.5rem 2rem;
-  color: white;
-  text-decoration: none;
-  text-align: center;
   font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 60px;
+  padding: 0.9rem 2rem;
+  max-width: max-content;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  margin: 1px;
 }
 .radost {
   width: 100%;
@@ -843,16 +859,18 @@ body {
   margin-top: 25px;
   margin-bottom: 125px;
   padding: 0.9rem 8.2rem;
-  width: 140px;
-  text-align: center;
+  width: 30rem;
   border: 1px solid white;
   border-radius: 3px;
   font-size: 17px;
   font-weight: bold;
   color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .radost a:hover {
-  border: 0px solid black;
+  border: 1px solid transparent;
   border-radius: 3px;
 }
 .elektro {
@@ -887,16 +905,18 @@ body {
   margin-top: 25px;
   margin-bottom: 125px;
   padding: 0.9rem 8.2rem;
-  width: 140px;
-  text-align: center;
+  width: 23rem;
   border: 1px solid white;
   border-radius: 3px;
   font-size: 17px;
   font-weight: bold;
   color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .elektro a:hover {
-  border: 0px solid black;
+  border: 1px solid transparent;
   border-radius: 3px;
 }
 .almost_end {
